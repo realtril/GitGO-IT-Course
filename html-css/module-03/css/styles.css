@@ -1,0 +1,110 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  font-weight: lighter;
+  font-size: 14px;
+  color: #626262;
+  line-height: 24px;
+}
+
+.container {
+  width: 902px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav-menu {
+  margin-top: 40px;
+  margin-bottom: 74px;
+}
+
+.site-nav {
+  font-size: 14px;
+  width: 624px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+}
+
+.menu-item {
+  display: inline-block;
+  height: 54px;
+  max-width: 20%;
+  margin: 0;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.menu-item-link {
+  color: #626262;
+  display: inline-block;
+  padding: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style: none;
+  line-height: 18px;
+  padding: 18px 0px;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  color: #03a9f4;
+}
+
+.website-content {
+  margin-bottom: 56px;
+}
+
+.post-subject {
+  width: 900px;
+  margin-top: 70px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+}
+
+.post-list-item {
+  display: inline-block;
+  width: 420px;
+}
+
+.post-list-item:nth-child(odd) {
+  margin-right: 60px;
+}
+
+.post-title {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 28px;
+  margin-top: 32px;
+}
+
+.load-more {
+  width: 168px;
+  margin: 0 auto;
+  border-color: #626262;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 24px;
+  text-align: center;
+}
+
+.post-heading {
+  font-size: 30px;
+  font-weight: lighter;
+  line-height: 36px;
+  margin-bottom: 36px;
+}
+
+.post-info {
+  font-size: 14px;
+  margin-bottom: 122px;
+  line-height: 24px;
+}
