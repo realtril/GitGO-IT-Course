@@ -35,8 +35,6 @@ h2 {
 
 .menu-item {
   display: inline-block;
-  height: 54px;
-  max-width: 20%;
   margin: 0;
   font-size: 14px;
 }
@@ -57,12 +55,13 @@ h2 {
 }
 
 .site-nav a:hover,
+button:hover,
 .site-nav a:focus {
   color: #03a9f4;
 }
 
 .website-content {
-  margin-bottom: 56px;
+  padding-bottom: 56px;
 }
 
 .post-subject {
@@ -99,11 +98,10 @@ h2 {
 
 .post-info {
   font-size: 14px;
-  margin-bottom: 122px;
   line-height: 24px;
 }
 
-.container .load-more-button {
+.load-more-button {
   width: 168px;
   border-color: #626262;
   font-size: 18px;
