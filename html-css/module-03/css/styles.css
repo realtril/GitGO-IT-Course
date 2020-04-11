@@ -10,20 +10,24 @@ body {
   line-height: 24px;
 }
 
+p,
+h2 {
+  margin: 0;
+}
+
 .container {
-  width: 902px;
+  width: 900px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 10px;
 }
 
 .nav-menu {
-  margin-top: 40px;
-  margin-bottom: 74px;
+  padding-top: 40px;
+  padding-bottom: 74px;
 }
 
 .site-nav {
-  font-size: 14px;
-  width: 624px;
+  font-size: 0;
   margin: 0 auto;
   text-align: center;
   padding: 0;
@@ -34,6 +38,7 @@ body {
   height: 54px;
   max-width: 20%;
   margin: 0;
+  font-size: 14px;
 }
 
 .menu-item:not(:last-child) {
@@ -42,7 +47,7 @@ body {
 
 .menu-item-link {
   color: #626262;
-  display: inline-block;
+  display: block;
   padding: 24px;
   text-transform: uppercase;
   text-decoration: none;
@@ -61,7 +66,6 @@ body {
 }
 
 .post-subject {
-  width: 900px;
   margin-top: 70px;
   list-style: none;
   padding: 0;
@@ -86,16 +90,6 @@ body {
   margin-top: 32px;
 }
 
-.load-more {
-  width: 168px;
-  margin: 0 auto;
-  border-color: #626262;
-  font-size: 20px;
-  line-height: 24px;
-  padding: 24px;
-  text-align: center;
-}
-
 .post-heading {
   font-size: 30px;
   font-weight: lighter;
@@ -107,4 +101,15 @@ body {
   font-size: 14px;
   margin-bottom: 122px;
   line-height: 24px;
+}
+
+.container .load-more-button {
+  width: 168px;
+  border-color: #626262;
+  font-size: 18px;
+  line-height: 15px;
+  padding: 24px;
+  text-align: center;
+  display: block;
+  margin: auto;
 }
