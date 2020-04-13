@@ -4,27 +4,45 @@
   box-sizing: border-box;
 }
 
-h1 {
-  margin: 0;
-}
-
 .container {
   width: 1110px;
   margin: 0 auto;
 }
 
+.page-nav {
+  padding-top: 43px;
+  padding-bottom: 105px;
+}
+
 .page-nav a {
-  float: left;
   text-decoration: none;
+}
+
+.logotype::first-letter {
+  font-weight: 900;
+  color: #1abc9c;
+}
+
+.logotype {
+  display: block;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #555252;
+  float: left;
 }
 
 .page-nav-list {
   float: right;
+  margin-top: 9px;
+  text-align: center;
+  display: block;
 }
 
 .page-nav-list li {
   float: left;
-  margin-top: 40px;
   list-style: none;
 }
 
@@ -41,33 +59,6 @@ h1 {
 
 .page-nav-item:hover {
   color: #1abc9c;
-}
-
-.logotype {
-  display: block;
-  margin-top: 30px;
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 30px;
-  text-transform: uppercase;
-  color: #555252;
-}
-
-.logotype::first-letter {
-  font-weight: 900;
-  color: #1abc9c;
-}
-
-.page-nav ul {
-  text-align: center;
-  display: block;
-}
-
-.clearfix {
-  display: table;
-  clear: both;
-  overflow: visible;
 }
 
 .products-header {
@@ -90,15 +81,6 @@ h1 {
   margin: 0 auto;
 }
 
-.menu-product:nth-child(4n),
-.menu-product:last-child {
-  margin-right: 0;
-}
-
-.menu-product:nth-child(-n + 4) {
-  margin-bottom: 30px;
-}
-
 .menu-product {
   margin-right: 30px;
   background-color: #e8effc;
@@ -107,40 +89,56 @@ h1 {
   list-style: none;
 }
 
+.menu-product:nth-child(4n),
+.menu-product:last-child {
+  margin-right: 0;
+}
+
+.menu-product:nth-child(-n + 4) {
+  margin-bottom: 32px;
+}
+
 .product-item {
   height: 40px;
+  width: 255px;
+  background-color: #323232;
 }
 
 .product-item h3 {
-  float: left;
-  width: 201px;
-  background-color: #323232;
-  height: 40px;
-  padding: 10px;
+  padding: 5px 0 3px 0;
   font-size: 18px;
+  float: left;
+}
+
+.menu-item-link {
+  text-decoration: none;
+  display: block;
+  line-height: 32px;
   font-family: "Roboto", sans-serif;
+  font-weight: 900;
   text-transform: uppercase;
+  font-size: 18px;
   color: #ffffff;
 }
 
 .product-item p {
   float: right;
-  width: 53px;
-  background-color: #8c8c8c;
-  padding: 10px;
-  margin-right: 1px;
-  height: 40px;
+  padding: 4px 0;
+  width: 55px;
+  height: 100%;
+  text-align: center;
   font-family: "Roboto", sans-serif;
+  font-weight: 900;
   font-size: 18px;
-  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
-.menu-product:hover .product-title {
+.menu-product:hover .product-item {
+  background-color: #1abc9c;
+}
+
+.product-item:hover {
   background-color: #33cc99;
-}
-
-.menu-product:hover .product-price {
-  background-color: #7fd9c7;
 }
 
 .product-item p::before {
@@ -152,5 +150,88 @@ h1 {
 }
 
 .products {
-  margin-bottom: 106px;
+  padding-bottom: 106px;
+}
+
+.news-header {
+  text-align: center;
+  color: #515151;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+  font-size: 48px;
+  line-height: 58px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+
+.news-header::after {
+  display: block;
+  width: 166px;
+  border-bottom: 6px solid;
+  height: 33px;
+  content: "";
+  color: #1abc9c;
+  margin: 0 auto;
+}
+
+.news-item {
+  width: 350px;
+  margin-right: 30px;
+  float: left;
+}
+
+.news-item:last-child {
+  margin-right: 0;
+}
+
+img {
+  display: block;
+  padding-bottom: 40px;
+}
+
+.title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  color: #555252;
+  margin-bottom: 35px;
+}
+
+.title::after {
+  display: block;
+  width: 135px;
+  border-bottom: 4px solid;
+  content: "";
+  color: #1abc9c;
+  height: 15px;
+}
+
+.news-description {
+  font-size: 14px;
+  line-height: 26px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #555252;
+}
+
+.read-more {
+  background: #1abc9c;
+  color: #fff;
+  display: block;
+  padding: 18px 20px;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  text-decoration: none;
+  width: 160px;
+  border-radius: 3px;
+  margin-top: 28px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
