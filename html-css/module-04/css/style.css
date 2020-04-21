@@ -230,6 +230,10 @@ img {
   margin-top: 28px;
 }
 
+.read-more:hover {
+  background-color: #515151;
+}
+
 .clearfix::after {
   content: "";
   display: table;

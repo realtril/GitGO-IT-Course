@@ -74,7 +74,7 @@ img {
   line-height: 1.2;
 }
 
-.nav-list-item:after {
+.nav-list-link:after {
   content: "";
   display: block;
   margin: auto;
@@ -83,7 +83,7 @@ img {
   transition-timing-function: (0.17, 0.67, 0.83, 0.67);
 }
 
-.nav-list-item:hover:after {
+.nav-list-link:hover:after {
   width: 100%;
   background: rgb(243, 129, 129);
   transition: linear 200ms linear;
@@ -134,6 +134,7 @@ img {
   text-transform: uppercase;
   line-height: 1.2;
   text-align: left;
+  margin-bottom: 20px;
 }
 
 .services__list-item-description,
@@ -144,23 +145,25 @@ img {
   color: rgb(153, 153, 153);
   line-height: 1.6;
   text-align: left;
-}
-
-.services__list-item-description {
-  width: 270px;
+  margin: 0;
 }
 
 .services__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
 .services__list-item {
   width: 380px;
   margin-bottom: 100px;
-  padding-left: 60px;
   position: relative;
+  display: inline-block;
+}
+
+.services__info {
+  width: 300px;
+  margin-left: 80px;
 }
 
 .services__list-item::before {
@@ -221,10 +224,10 @@ img {
   position: relative;
 }
 
-.about__list-item:hover,
-.overlay__list {
+.about__list-item:hover .about__list-item-img-wrapper {
   transform: translate(-10px, -10px);
-  transition: transform 200ms linear;
+  transition: all 200ms linear;
+  box-shadow: 10px 10px 0 2px var(--main-color);
 }
 
 .about__list-item:not(:last-child) {
@@ -234,7 +237,6 @@ img {
 .about__list-item:hover .overlay {
   opacity: 1;
   visibility: visible;
-  box-shadow: 10px 10px 0 2px var(--main-color);
 }
 
 .about__list-item-img-wrapper {
@@ -330,6 +332,10 @@ img {
   margin-bottom: 88px;
 }
 
+.overlay__list-item:not(:last-child) {
+  border-right: 2px solid coral;
+}
+
 .copyright {
   display: flex;
   justify-content: space-between;
@@ -344,10 +350,14 @@ img {
   font-family: "Myriad Pro";
 }
 
+.subscribe-form {
+  display: flex;
+  height: 40px;
+}
+
 .subscribe-form__btn {
   background-color: var(--main-color);
   width: 150px;
-  height: 40px;
   line-height: 1.2;
   font-size: 14px;
   font-family: var(--main-font);
@@ -364,9 +374,12 @@ img {
   line-height: 1.2;
   font-weight: 300;
   width: 230px;
-  height: 40px;
   transition: linear 200ms;
   border: 1px solid rgb(231, 231, 231);
+}
+
+.subscribe-form__input::placeholder {
+  color: rgb(204, 204, 204);
 }
 
 .subscribe-form__btn:hover {
