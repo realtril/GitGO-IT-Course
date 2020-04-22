@@ -1,0 +1,297 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v14-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/montserrat-v14-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/montserrat-v14-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/montserrat-v14-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/montserrat-v14-latin-regular.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/montserrat-v14-latin-700.eot"); /* IE9 Compat Modes */
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin-700.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/montserrat-v14-latin-700.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/montserrat-v14-latin-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/montserrat-v14-latin-700.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-900 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/montserrat-v14-latin-900.eot"); /* IE9 Compat Modes */
+  src: local("Montserrat Black"), local("Montserrat-Black"),
+    url("../fonts/montserrat-v14-latin-900.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/montserrat-v14-latin-900.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/montserrat-v14-latin-900.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/montserrat-v14-latin-900.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/montserrat-v14-latin-900.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+
+/* source-sans-pro-regular - latin */
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/source-sans-pro-v13-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local("Source Sans Pro Regular"), local("SourceSansPro-Regular"),
+    url("../fonts/source-sans-pro-v13-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/source-sans-pro-v13-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/source-sans-pro-v13-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/source-sans-pro-v13-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/source-sans-pro-v13-latin-regular.svg#SourceSansPro")
+      format("svg"); /* Legacy iOS */
+}
+
+/* source-sans-pro-300italic - latin */
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: italic;
+  font-weight: 300;
+  src: url("../fonts/source-sans-pro-v13-latin-300italic.eot"); /* IE9 Compat Modes */
+  src: local("Source Sans Pro Light Italic"), local("SourceSansPro-LightItalic"),
+    url("../fonts/source-sans-pro-v13-latin-300italic.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/source-sans-pro-v13-latin-300italic.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/source-sans-pro-v13-latin-300italic.woff") format("woff"),
+    /* Modern Browsers */
+      url("../fonts/source-sans-pro-v13-latin-300italic.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/source-sans-pro-v13-latin-300italic.svg#SourceSansPro")
+      format("svg"); /* Legacy iOS */
+}
+/* source-sans-pro-italic - latin */
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/source-sans-pro-v13-latin-italic.eot"); /* IE9 Compat Modes */
+  src: local("Source Sans Pro Italic"), local("SourceSansPro-Italic"),
+    url("../fonts/source-sans-pro-v13-latin-italic.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/source-sans-pro-v13-latin-italic.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/source-sans-pro-v13-latin-italic.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/source-sans-pro-v13-latin-italic.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/source-sans-pro-v13-latin-italic.svg#SourceSansPro")
+      format("svg"); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: "Wisdom Script Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Wisdom Script Regular"),
+    url("../fonts/Wisdom Script AJ.woff") format("woff");
+}
+
+/* roboto-slab-regular - latin */
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-slab-v11-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/roboto-slab-v11-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/roboto-slab-v11-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/roboto-slab-v11-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/roboto-slab-v11-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/roboto-slab-v11-latin-regular.svg#RobotoSlab") format("svg"); /* Legacy iOS */
+}
+
+:root {
+  --main-font: "Roboto Slab";
+  --logo-font: "Wisdom Script Regular";
+  --headers-font: "Montserrat";
+  --subtitle-font: "Source Sans Pro";
+  --main-font-color: rgb(119, 119, 119);
+  --main-page-color: rgb(34, 34, 34);
+  --secondary-color: rgb(254, 209, 54);
+}
+
+.header {
+  padding-top: 58px;
+  padding-bottom: 98px;
+}
+
+.logo {
+  font-size: 26px;
+  line-height: 1.577;
+  font-family: var(--logo-font);
+  color: var(--secondary-color);
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.nav-list-link {
+  color: var(--main-page-color);
+  font-family: var(--headers-font);
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 2.929;
+}
+
+.nav-list-link:hover {
+  color: var(--secondary-color);
+}
+
+.services-title {
+  text-transform: uppercase;
+  font-size: 40px;
+  color: var(--main-page-color);
+  font-weight: bold;
+  line-height: 1.875;
+  text-align: center;
+  font-family: var(--headers-font);
+  padding: 0;
+  margin: 0;
+  margin-bottom: 23px;
+}
+
+.subtitle {
+  font-size: 16px;
+  font-family: var(--subtitle-font);
+  color: var(--main-font-color);
+  font-style: italic;
+  line-height: 1.2;
+  text-align: center;
+  display: block;
+  text-transform: none;
+  margin-bottom: 80px;
+}
+
+.services_info_title {
+  font-size: 18px;
+  font-family: var(--headers-font);
+  color: var(--main-page-color);
+  font-weight: bold;
+  margin-bottom: 26px;
+}
+
+.services-list-item::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  width: 72px;
+  height: 72px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.services-list-item:first-child::before {
+  background-image: url("../img/Icon-Basket.png");
+}
+
+.services-list-item:nth-child(2)::before {
+  background-image: url("../img/Icon-Laptop.png");
+}
+
+.services-list-item:nth-child(3)::before {
+  background-image: url("../img/Icon-Locked.png");
+}
+
+.services_info_description {
+  font-size: 14px;
+  font-family: var(--main-font);
+  color: var(--main-font-color);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  padding: 0;
+  margin: 0;
+}
+
+.services-list-item {
+  width: 290px;
+  margin-bottom: 102px;
+  display: inline-block;
+  text-align: center;
+}
+
+.services-list-item:not(:last-child) {
+  margin-right: 35px;
+}
+

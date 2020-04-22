@@ -287,6 +287,10 @@
   background-color: #1abc9c;
 }
 
+.collection-item:hover .product-item {
+  background-color: #1abc9c;
+}
+
 .shop-icon-link_add_to_cart {
   display: block;
   width: 166px;
