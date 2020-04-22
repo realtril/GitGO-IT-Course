@@ -17,7 +17,7 @@ img {
 :root {
   --main-font: "Montserrat", sans-serif;
   --secondary-font: "Kaushan Script", cursive;
-  --sections-description-font: "Roboto Slab", serif;
+  --sections-description-font: "Roboto", serif;
   --main-color: rgb(149, 225, 211);
   --secondary-color: rgb(153, 153, 153);
   --gradient-main-color: linear-gradient(
@@ -81,12 +81,17 @@ img {
   height: 3px;
   transition: linear 200ms;
   transition-timing-function: (0.17, 0.67, 0.83, 0.67);
+  margin-top: 7px;
 }
 
 .nav-list-link:hover:after {
   width: 100%;
   background: rgb(243, 129, 129);
   transition: linear 200ms linear;
+}
+
+.nav-list-link:hover {
+  color: rgb(243, 129, 129);
 }
 
 .services-title,
@@ -333,7 +338,7 @@ img {
 }
 
 .overlay__list-item:not(:last-child) {
-  border-right: 2px solid coral;
+  border-right: 1.5px solid rgb(243, 129, 129);
 }
 
 .copyright {
@@ -347,7 +352,9 @@ img {
   display: block;
   color: rgb(51, 51, 51);
   line-height: 1.2;
-  font-family: "Myriad Pro";
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 1.2;
 }
 
 .subscribe-form {
@@ -376,6 +383,7 @@ img {
   width: 230px;
   transition: linear 200ms;
   border: 1px solid rgb(231, 231, 231);
+  padding-left: 10px;
 }
 
 .subscribe-form__input::placeholder {
