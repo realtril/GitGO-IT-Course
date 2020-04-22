@@ -14,7 +14,6 @@ a {
   display: block;
 }
 
-
 img {
   display: block;
   max-width: 100%;
@@ -294,4 +293,3 @@ img {
 .services-list-item:not(:last-child) {
   margin-right: 35px;
 }
-
