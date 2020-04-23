@@ -88,37 +88,46 @@
               >Proin iaculis purus consequat sem cure.</span
             >
           </h2>
-          <form action="#" class="subscribe-form">
-            <div class="wrap">
+          <form action="#" class="subscribe-form" method="post">
+            <div class="contacts-wrap">
               <ul class="required-list-items">
-                <li class="required-list-items">
+                <li class="required-list-item">
                   <input
                     type="text"
                     name="user_name"
-                    class="required_list_inputs"
+                    class="required-list-inputs"
                     placeholder="Your Name *"
                     required=""
                     minlength="3"
+                    pattern="[A-Za-z ]{3,32}"
+                    id="username"
+                    oninvalid="setCustomValidity('Please enter your real name.')"
+                    onkeyup="setCustomValidity('')"
                   />
                 </li>
 
-                <li class="required-list-items">
+                <li class="required-list-item">
                   <input
                     type="text"
                     name="user_email"
-                    class="required_list_inputs"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                    class="required-list-inputs"
                     placeholder="Your E-mail *"
                     required=""
+                    oninvalid="setCustomValidity('Please enter your real email address.')"
+                    onkeyup="setCustomValidity('')"
                   />
                 </li>
 
-                <li class="required-list-items">
+                <li class="required-list-item">
                   <input
                     type="text"
                     name="user_subject"
-                    class="required_list_inputs"
+                    class="required-list-inputs"
                     placeholder="Subject"
                     required=""
+                    oninvalid="setCustomValidity('Please enter the subject.')"
+                    onkeyup="setCustomValidity('')"
                   />
                 </li>
               </ul>
@@ -126,10 +135,14 @@
               <textarea
                 name="user_message"
                 id=""
-                class="contacts_form_message"
+                class="contacts-form-message"
                 placeholder="Your message *"
+                minlength="30"
+                oninvalid="setCustomValidity('The minimum lenght is 30 symbols.')"
+                onkeyup="setCustomValidity('')"
               ></textarea>
-              <button type="submit" class="contacts_form_btn">
+
+              <button type="submit" class="contacts-form-btn">
                 Send Message
               </button>
             </div>
