@@ -375,6 +375,7 @@ img {
   color: var(--secondary-color);
   background-color: rgb(255, 255, 255);
   transform: scale(1.1);
+  transition: all 400ms;
 }
 
 .required-list-inputs:focus,
