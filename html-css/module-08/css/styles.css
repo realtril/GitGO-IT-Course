@@ -124,6 +124,10 @@ button:hover {
   margin-right: 0;
 }
 
+.logo:hover {
+  color: var(--main-color);
+}
+
 .website-motto {
   font-size: 30px;
   text-transform: uppercase;
@@ -285,16 +289,17 @@ button:hover {
 
   .website-motto {
     font-size: 52px;
-    margin-bottom: 43px;
+    margin-bottom: 33px;
   }
 
   .website-motto-enforcement span {
     display: inline-block;
+    margin-bottom: 0;
   }
 
   .website-motto-enforcement {
     margin: 0 auto;
-    margin-bottom: 16px;
+    margin-bottom: 43px;
   }
 
   .partners-profile {
@@ -317,5 +322,38 @@ button:hover {
 
   .partner-img::after {
     right: 55px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    width: 1440px;
+  }
+
+  .header {
+    background-image: url("../img/desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 703px;
+    padding-top: 57px;
+    margin-bottom: 80px;
+  }
+  .website-motto-enforcement {
+    margin-bottom: 33px;
+  }
+  .sections-header {
+    margin-bottom: 45px;
+  }
+
+  .partner-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 0 250px;
+  }
+
+  .partners-profile {
+    width: 220px;
+    margin-bottom: 45px;
   }
 }
