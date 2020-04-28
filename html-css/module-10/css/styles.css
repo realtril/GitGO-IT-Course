@@ -97,6 +97,7 @@
   --header-font: "Kaushan Script";
   --main-color: rgb(149, 225, 211);
   --secondary-color: rgb(51, 51, 51);
+  --header-color: rgb(255, 255, 255);
 }
 
 *,
@@ -152,6 +153,8 @@ h3 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding-bottom: 210px;
+  margin-bottom: 52px;
 }
 
 @media (min-resolution: 192dpi) {
@@ -169,6 +172,31 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 28px;
+  padding-bottom: 180px;
+}
+
+.logotype {
+  font-size: 30px;
+  font-family: var(--secondary-font);
+  color: var(--header-color);
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.logotype::after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 3px;
+  transition: linear 200ms;
+  transition-timing-function: (0.17, 0.67, 0.83, 0.67);
+}
+
+.logotype:hover:after {
+  width: 100%;
+  background: rgb(252, 227, 138);
+  transition: linear 200ms linear;
 }
 
 .navigation__list {
@@ -179,8 +207,144 @@ h3 {
   margin-right: 59px;
 }
 
+.navigation__list-link {
+  display: block;
+  text-transform: uppercase;
+  color: var(--header-color);
+  font-size: 14px;
+  font-family: var(--secondary-font);
+  text-align: center;
+}
+
+.navigation__list-link:after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 3px;
+  transition: linear 200ms;
+  transition-timing-function: (0.17, 0.67, 0.83, 0.67);
+  margin-top: 7px;
+}
+
+.navigation__list-link:hover:after {
+  width: 100%;
+  background: rgb(252, 227, 138);
+  transition: linear 200ms linear;
+}
+
+.navigation__list-link:hover {
+  color: rgb(252, 227, 138);
+}
+
 .navigation__list-icon {
   width: 18px;
   height: 15px;
-  fill: rgb(255, 255, 255);
+  fill: var(--header-color);
+  cursor: pointer;
+}
+
+.navigation__list-icon:hover {
+  fill: rgb(252, 227, 138);
+}
+
+.header__title {
+  font-size: 72px;
+  font-family: var(--header-font);
+  color: var(--header-color);
+  line-height: 1.2;
+  text-align: center;
+  margin: 0 0 35px 0;
+}
+
+.header__description {
+  font-size: 150px;
+  font-weight: 700;
+  font-family: var(--secondary-font);
+  color: var(--header-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 0.933;
+  text-align: center;
+  width: 820px;
+  margin: 0 auto 90px auto;
+}
+
+.modal-btn {
+  border-style: solid;
+  border-width: 3px;
+  border-color: var(--header-color);
+  background-color: rgba(0, 0, 0, 0);
+  width: 164px;
+  line-height: 44px;
+  display: block;
+  margin: 0 auto;
+  text-transform: uppercase;
+  color: var(--header-color);
+  font-family: var(--secondary-font);
+  cursor: pointer;
+}
+
+.services__list-item__description,
+.about__text {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(153, 153, 153);
+  line-height: 1.6;
+  text-align: left;
+  margin: 0;
+}
+
+.services__list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.services__list-item {
+  width: 380px;
+  margin-bottom: 100px;
+  position: relative;
+  display: inline-block;
+}
+
+.services__list-item__info-wrapper {
+  width: 300px;
+  margin-left: 80px;
+}
+
+.services__list-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 12px;
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  background-size: 34px 34px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.services__list-item:first-child::before {
+  background-image: url("../icons/sprite_services.svg#icon-ALARM");
+}
+
+.services__list-item:nth-child(2)::before {
+  background-image: url("../icons/sprite_services.svg#icon-LINEGRAPH");
+}
+
+.services__list-item:nth-child(3)::before {
+  background-image: url("../icons/sprite_services.svg#icon-COMPUTER");
+}
+
+.services__list-item:nth-child(4)::before {
+  background-image: url("../icons/sprite_services.svg#icon-BOOK");
+}
+
+.services__list-item:nth-child(5)::before {
+  background-image: url("../icons/sprite_services.svg#icon-HOME");
+}
+
+.services__list-item:nth-child(6)::before {
+  background-image: url("../icons/sprite_services.svg#icon-IMAGE");
 }
