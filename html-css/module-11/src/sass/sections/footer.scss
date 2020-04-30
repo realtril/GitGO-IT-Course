@@ -1,0 +1,57 @@
+.subscribe-form {
+  display: flex;
+  height: 40px;
+  &__input::placeholder {
+    color: rgb(204, 204, 204);
+  }
+  &__input {
+    font-family: $secondary-font;
+    font-style: italic;
+    font-weight: 300;
+    width: 230px;
+    transition: linear 200ms;
+    border: 1px solid rgb(231, 231, 231);
+    padding-left: 10px;
+  }
+}
+
+.subscribe-form .subscribe-form__btn {
+  background-color: $main-color;
+  width: 150px;
+  font-size: 14px;
+  font-family: $secondary-font;
+  font-weight: 700;
+  border: none;
+  transition: linear 200ms;
+  text-transform: uppercase;
+  color: $header-color;
+}
+
+.copyright {
+  @extend %dflex;
+  align-items: center;
+  padding-bottom: 12px;
+  span {
+    display: block;
+    color: $secondary-color;
+    font-family: $secondary-font;
+    font-size: 14px;
+  }
+}
+
+.footer {
+  &::before {
+    display: block;
+    content: "";
+    @include box(1200px, 2px);
+    background-color: rgb(229, 229, 229);
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+  }
+  &__link {
+    color: rgb(243, 129, 129);
+    display: inline;
+  }
+}

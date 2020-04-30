@@ -1,0 +1,61 @@
+.services {
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .services__list-item {
+    width: 380px;
+    margin-bottom: 100px;
+    position: relative;
+    display: inline-block;    
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      display: inline-block;
+      @include box(34px,34px);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &__title {
+      font-size: 14px;
+      font-family: $secondary-font;
+      color: rgb(51, 51, 51);
+      text-transform: uppercase;
+      line-height: 1.2;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+    &__info-wrapper {
+      width: 300px;
+      margin-left: 80px;
+    }
+    &:first-child::before {
+      background-image: url("../images/icons/ALARM.svg");
+    }
+    &:nth-child(2)::before {
+      background-image: url("../images/icons/LINEGRAPH.svg");
+    }
+    &:nth-child(3)::before {
+      background-image: url("../images/icons/COMPUTER.svg");
+    }
+    &:nth-child(4)::before {
+      background-image: url("../images/icons/BOOK.svg");
+    }
+    &:nth-child(5)::before {
+      background-image: url("../images/icons/HOME.svg");
+    }
+    &:nth-child(6)::before {
+      background-image: url("../images/icons/IMAGE.svg");
+    }
+  }
+  &__list-item__description {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(153, 153, 153);
+    line-height: 1.6;
+    text-align: left;
+    margin: 0;
+  }
+}

@@ -1,0 +1,101 @@
+.about {
+  &__text {
+    text-align: center;
+    margin-bottom: 96px;
+  }
+  &__list {
+    @extend %dflex;
+    padding: 0;
+    margin: 0;
+    &-item {
+      width: max-content;
+      text-align: center;
+      position: relative;
+      &-img-wrapper {
+        position: relative;
+        margin-bottom: 14px;
+      }
+      &-name {
+        display: inline-block;
+        font-family: $secondary-font;
+        font-size: 14px;
+        font-weight: 400;
+        color: $secondary-color;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 28px;
+      }
+      &-position {
+        display: block;
+        font-size: 15px;
+        font-family: $main-font;
+        font-style: italic;
+        line-height: 1.6;
+        text-align: center;
+        margin-bottom: 88px;
+      }
+
+      &:hover .about__list-item-img-wrapper {
+        transform: translate(-10px, -10px);
+        transition: all 200ms linear;
+        box-shadow: 10px 10px 0 2px $main-color;
+      }
+      &:hover .overlay {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
+  }
+  &-wrapper {
+    position: relative;
+  }
+}
+
+.overlay {
+  @include box(100%,100%);
+  background-image: linear-gradient(
+    90deg,
+    rgba(252, 227, 138, 0.9) 0%,
+    rgba(243, 129, 129, 0.9) 100%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s linear;
+  &__list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .overlay__list-icon {
+      fill: rgb(243, 129, 129);
+      @include box(27px);
+    }
+    &-link {
+      display: block;
+      @include box(58px);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: rgb(252, 227, 138);
+      padding: 12px;
+      &:hover {
+        background-color: rgb(243, 129, 129);
+        transition: linear 200ms;
+        .overlay__list-icon {
+          fill: $header-color;
+        }
+      }
+    }
+    &-item:not(:last-child) {
+      border-right: 1.5px solid rgb(243, 129, 129);
+    }
+  }
+}
